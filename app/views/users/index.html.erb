@@ -1,0 +1,10 @@
+<h1>This Is The Index Page</h1>
+<ul>
+<% @user.each do |user| %>
+     <li>
+        <%= user.username %>, <%= user.email %>
+     <li>
+<% end %>
+</ul>
+
+<%=link_to 'Home Page', new_user_path %>
